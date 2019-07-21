@@ -17,4 +17,6 @@ urlpatterns = [
     url(r'^(?P<question_id>[0-9]+)/new/$', views.new, name='new'),
     url(r'^(?P<question_id>[0-9]+)/returning/$', views.returning, name='returning'),
     url(r'^(?P<question_id>[0-9]+)/averagestay/$', views.averagestay, name='averagestay'),
+     url(r'^(?P<storeId>[0-9]+)/statistics/$', views.statistics, name='statistics'),
+     url(r'^(?P<username>[a-zA-z0-9]+)/user/$', views.user, name='user'),
 ]
